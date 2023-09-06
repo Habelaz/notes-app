@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    padding-top: 4%;
+    padding-left: 7%;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container h1 img {
+    width: 60px;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd, #571094);
+    color: white;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+}
+
+.container button:active {
+    background: linear-gradient(#ac5df1, #6e3a9b);
+}
+
+.container button img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.input-box {
+    position: relative;
+    /* display:flex; */
+    /* flex-direction: column; */
+    width: 100%;
+    max-width: 500px;
+    min-height: 190px;
+    background: beige;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.input-box:hover {
+    transform: scale(1.05); /* Increased scale */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bolder box shadow */
+}
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.title{
+    border:none;
+    border-bottom:1.5px solid lightgray;
+    background-color:beige;
+    display:flex;
+    flex-wrap:wrap;
+    font-size:1.3rem;
+    color:purple;
+    outline:none;
+    font-weight:bold;
+    overflow:hidden;
+    word-wrap:break-word;
+}
+.details{
+    padding-top:5px;
+    font-size:1rem;
+    color:black;
+    background-color:beige;
+    border:none;
+    outline:none;
+    width:95%;
+}
+
+/* Media Queries */
+/* Mobile screens */
+@media (max-width: 768px) {
+    .notes-container {
+        width: 92%;
+
+    }
+    
+    
+}
+
+/* Tablet screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .notes-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        margin-right: 5%;
+    }
+}
+
+/* Laptop and bigger screens */
+@media (min-width: 1025px) {
+    .notes-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        margin-right: 5%;
+        padding-top: 0;
+    }
+}
