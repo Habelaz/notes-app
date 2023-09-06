@@ -83,6 +83,7 @@
     background-color: beige;
     display: flex;
     width:100%;
+    max-height: 1.7rem;
     flex-wrap: wrap;
     font-size: 1.3rem;
     color: purple;
