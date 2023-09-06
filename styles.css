@@ -50,8 +50,6 @@
 
 .input-box {
     position: relative;
-    /* display:flex; */
-    /* flex-direction: column; */
     width: 100%;
     max-width: 500px;
     min-height: 190px;
@@ -67,8 +65,8 @@
 }
 
 .input-box:hover {
-    transform: scale(1.05); /* Increased scale */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bolder box shadow */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .input-box img {
@@ -78,27 +76,30 @@
     right: 15px;
     cursor: pointer;
 }
-.title{
-    border:none;
-    border-bottom:1.5px solid lightgray;
-    background-color:beige;
-    display:flex;
-    flex-wrap:wrap;
-    font-size:1.3rem;
-    color:purple;
-    outline:none;
-    font-weight:bold;
-    overflow:hidden;
-    word-wrap:break-word;
+
+.title {
+    border: none;
+    border-bottom: 1.5px solid lightgray;
+    background-color: beige;
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    color: purple;
+    outline: none;
+    font-weight: bold;
+    overflow: hidden;
+    word-wrap: break-word;
 }
-.details{
-    padding-top:5px;
-    font-size:1rem;
-    color:black;
-    background-color:beige;
-    border:none;
-    outline:none;
-    width:95%;
+
+.details {
+    padding-top: 5px;
+    font-size: 1rem;
+    color: black;
+    background-color: beige;
+    border: none;
+    outline: none;
+    width: 95%;
 }
 
 /* Media Queries */
@@ -106,10 +107,25 @@
 @media (max-width: 768px) {
     .notes-container {
         width: 92%;
-
     }
     
-    
+    .title{
+        width:100%;
+        overflow: hidden;
+    }
+
+    /* Decrease the size of h1 for mobile screens */
+    .container h1 {
+        font-size: 28px; /* Adjust the font size as needed */
+        padding:0 10px;
+    }
+
+
+    /* Decrease the size of button for mobile screens */
+    .container button {
+        font-size: 14px; /* Adjust the font size as needed */
+        padding: 12px 20px; /* Adjust the padding as needed */
+    }
 }
 
 /* Tablet screens */
